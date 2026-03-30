@@ -2,7 +2,7 @@
 ---
 
 @import "{{ site.theme }}";
-a {
+a:link {
   color: #612A60
 }
 body {
