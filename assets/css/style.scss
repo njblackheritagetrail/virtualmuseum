@@ -2,12 +2,8 @@
 ---
 
 @import "{{ site.theme }}";
-a:link {
+a {
   color: #612A60
-}
-body {
-  color: black
-}
 a:hover {
   color: #CDA434
 }
