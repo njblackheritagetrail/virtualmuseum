@@ -2,12 +2,9 @@
 ---
 
 @import "{{ site.theme }}";
-a:link {
-  color: #612A60;
-}
 a:hover {
   color: #CDA434;
 }
-p {
-  font-family: "Freight Sans";
+a:link {
+  color: #612A60;
 }
