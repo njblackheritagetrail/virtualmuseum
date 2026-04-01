@@ -25,3 +25,36 @@
     >        
     </a-nft>
 </a-scene>
+<style>
+  .arjs-loader {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .arjs-loader div {
+    text-align: center;
+    font-size: 1.25em;
+    color: white;
+  }
+  .a-enter-vr {
+      display: none !important;
+  }
+  body {
+      margin: 0;
+      overflow: hidden;
+  }
+  canvas {
+      z-index: 1 !important;
+  }
+</style>
+<body style="margin : 0px; overflow: hidden;">
+   <div class="arjs-loader">
+    <div>Loading, please wait...</div>
+  </div>
