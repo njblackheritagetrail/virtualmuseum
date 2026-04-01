@@ -1,16 +1,6 @@
 <!-- import aframe and then ar.js with image tracking features -->
 <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
 <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-<!-- camera permissions -->
-<script>
-  navigator.mediaDevices.getUserMedia({ video: true })
-    .then(function(stream) {
-      console.log("Camera permission granted");
-    })
-    .catch(function(err) {
-      console.log("Camera permission denied: " + err);
-    });
-</script>
 
 <!-- style for the loader -->
 <style>
@@ -59,12 +49,9 @@
       smoothThreshold="5"
     >
       <!-- as a child of the a-nft entity, you can define the content to show. -->
-            <a-entity
-              <iframe src="https://raw.githubusercontent.com/njblackheritagetrail/virtualmuseum/main/twineDrakeHouse.html"
-              scale="5 5 5"
-              position="50 150 0"
-            >
-            </a-entity>
+      <a-entity htmlembed position="0 0 -5">
+        <iframe src="https://raw.githubusercontent.com/njblackheritagetrail/virtualmuseum/main/twineDrakeHouse.html" allow="camera"></iframe>iframe>
+      </a-entity>
     </a-nft>
     <!-- static camera that moves according to the device movemenents -->
     <a-entity camera></a-entity>
