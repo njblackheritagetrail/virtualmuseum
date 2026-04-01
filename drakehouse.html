@@ -1,5 +1,7 @@
-<script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+<!-- pull AR.js package -->
+<script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
 <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+<!-- camera permissions -->
 <script>
   navigator.mediaDevices.getUserMedia({ video: true })
     .then(function(stream) {
@@ -9,6 +11,7 @@
       console.log("Camera permission denied: " + err);
     });
 </script>
+<!-- style for the loader -->
 <style>
   .arjs-loader {
     height: 100%;
@@ -39,23 +42,29 @@
   }
 </style>
 <body style="margin : 0px; overflow: hidden;">
+  <!-- minimal loader shown until image descripters are loaded. Loading may take a while according to thye device -->
    <div class="arjs-loader">
     <div>Loading, please wait...</div>
   </div>
+<!-- a-frame scene -->
 <a-scene
     vr-mode-ui="enabled: false;"
     renderer="logarithmicDepthBuffer: true;"
     embedded
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
   >
+   <!-- a-nft is the anchor that defines an Image Tracking entity -->
+    <!-- on 'url' use the path to the QR code image -->
+    <!-- the path should end with the name without the extension e.g. if file is 'pinball.fset' the path should end with 'pinball' -->
     <a-nft
       type="nft"
-      url="https://raw.githubusercontent.com/njblackheritagetrail/virtualmuseum/main/drakeHouseQRCode.png"
+      url="https://raw.githubusercontent.com/njblackheritagetrail/virtualmuseum/main/drakeHouseQRCode"
       smooth="true"
       smoothCount="10"
       smoothTolerance=".01"
       smoothThreshold="5"
     >
+      <!-- as a child of the a-nft entity, you can define the content to show -->
+      <iframe src="https://raw.githubusercontent.com/njblackheritagetrail/virtualmuseum/main/twineDrakeHouse.html" width="100%" height="500px"></iframe>
     </a-nft>
 </a-scene>
-<iframe src="https://raw.githubusercontent.com/njblackheritagetrail/virtualmuseum/main/twineDrakeHouse.html" width="100%" height="500px"></iframe>
