@@ -9,22 +9,6 @@
       console.log("Camera permission denied: " + err);
     });
 </script>
-<a-scene
-    vr-mode-ui="enabled: false;"
-    renderer="logarithmicDepthBuffer: true;"
-    embedded
-    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
-  >
-    <a-nft
-      type="nft"
-      url="https://raw.githubusercontent.com/njblackheritagetrail/virtualmuseum/main/drakeHouseQRCode.png"
-      smooth="true"
-      smoothCount="10"
-      smoothTolerance=".01"
-      smoothThreshold="5"
-    >
-    </a-nft>
-</a-scene>
 <style>
   .arjs-loader {
     height: 100%;
@@ -58,3 +42,20 @@
    <div class="arjs-loader">
     <div>Loading, please wait...</div>
   </div>
+<a-scene
+    vr-mode-ui="enabled: false;"
+    renderer="logarithmicDepthBuffer: true;"
+    embedded
+    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+  >
+    <a-nft
+      type="nft"
+      url="https://raw.githubusercontent.com/njblackheritagetrail/virtualmuseum/main/drakeHouseQRCode.png"
+      smooth="true"
+      smoothCount="10"
+      smoothTolerance=".01"
+      smoothThreshold="5"
+    >
+    </a-nft>
+</a-scene>
+<iframe src="https://raw.githubusercontent.com/njblackheritagetrail/virtualmuseum/main/twineDrakeHouse.html" width="100%" height="500px"></iframe>
