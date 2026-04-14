@@ -104,7 +104,80 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="shadyrest" startnode="8" creator="Twine" creator-version="2.11.1" format="SugarCube" format-version="2.37.3" ifid="D48849F7-BFB5-4B1C-9A92-F910474AA1FD" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="backgroundShadyRest" tags="" position="900,700" size="100,100">[img[https://raw.githubusercontent.com/njblackheritagetrail/virtualmuseum/main/general/returnToWelcome.png][welcomeShadyRest]]
+	<tw-storydata name="shadyrest" startnode="8" creator="Twine" creator-version="2.11.1" format="SugarCube" format-version="2.37.3" ifid="D48849F7-BFB5-4B1C-9A92-F910474AA1FD" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">#ui-bar {
+  display: none;
+}
+#story {
+  margin-left: 0;
+}
+.passage img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; /* Ensures images don't overflow small screens */
+    height: auto;    /* Maintains aspect ratio */
+}
+.image-row {
+  display: flex;
+  justify-content: center; /* Centers the images */
+  gap: 10px;               /* Space between images */
+}
+
+.image-row img {
+  max-width: 300px;        /* Adjust size as needed */
+  height: auto;
+  cursor: pointer;
+}
+.full-page-center {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;     /* Vertical centering */
+    height: 100vh;           /* 100% of the viewport height */
+    width: 100%;             /* Full width of the passage area */
+}
+
+.full-page-center img {
+    max-width: 100%;         /* Ensure image doesn't overflow */
+    height: auto;
+}
+/* Story Stylesheet */
+#story {
+    background-color: transparent; /* Allows video to show */
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Style to make the video act as a background */
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Puts it behind everything */
+    object-fit: cover;
+}
+img {
+  display: block;      /* Removes the "inline" gap below images */
+  margin: 0;           /* Ensures no extra margin */
+  padding: 0;          /* Ensures no extra padding */
+}
+.small-img img {
+  width: 50px;  /* Adjust size as needed */
+  height: auto;  /* Maintains aspect ratio */
+}
+
+a {
+  color: #612A60;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">// Ensure the viewport allows scaling
+document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes');
+
+</script><tw-passagedata pid="1" name="backgroundShadyRest" tags="" position="900,700" size="100,100">[img[https://raw.githubusercontent.com/njblackheritagetrail/virtualmuseum/main/general/returnToWelcome.png][welcomeShadyRest]]
 
 &lt;a href=&quot;https://onsound.eu/&quot; target=&quot;_blank&quot;&gt;Street Food by Alex-Productions&lt;/a&gt;
 &lt;a href=&quot;https://www.free-stock-music.com&quot; target=&quot;_blank&quot;&gt;Royalty Free Music&lt;/a&gt;
@@ -132,7 +205,7 @@ navigator.mediaDevices.getUserMedia({ video: { facingMode: &quot;environment&quo
  &lt;&lt;/script&gt;&gt;
 &lt;&lt;nobr&gt;&gt;
 [img[https://raw.githubusercontent.com/njblackheritagetrail/virtualmuseum/main/general/tapSingleImage.png]]
-[img[https://github.com/njblackheritagetrail/virtualmuseum/blob/main/shadyRest/images-edited/anchorShadyRest.png][shadyRest1]]
+[img[https://raw.githubusercontent.com/njblackheritagetrail/virtualmuseum/main/shadyRest/images-edited/anchorShadyRest.png][shadyRest1]]
 &lt;span class=&quot;small-img&quot;&gt;[img[https://raw.githubusercontent.com/njblackheritagetrail/virtualmuseum/main/general/musicIcon.png][backgroundShadyRest]]&lt;/span&gt;
 &lt;&lt;/nobr&gt;&gt;
 
@@ -142,7 +215,7 @@ navigator.mediaDevices.getUserMedia({ video: { facingMode: &quot;environment&quo
 &lt;&lt;audio &quot;audioShadyRest2&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;audioShadyRest3&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;audioShadyRest4&quot; stop&gt;&gt;
-&lt;&lt;audio &quot;audioDShadyRest5&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="shadyRest1" tags="" position="700,600" size="100,100">&lt;video id=&quot;camera-feed&quot; autoplay playsinline style=&quot;width: 100%; height: 100%;&quot;&gt;&lt;/video&gt;
+&lt;&lt;audio &quot;audioShadyRest5&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="shadyRest1" tags="" position="700,600" size="100,100">&lt;video id=&quot;camera-feed&quot; autoplay playsinline style=&quot;width: 100%; height: 100%;&quot;&gt;&lt;/video&gt;
 &lt;&lt;nobr&gt;&gt;
 [img[https://raw.githubusercontent.com/njblackheritagetrail/virtualmuseum/main/general/returnToWelcome.png][welcomeShadyRest]]
 [img[https://raw.githubusercontent.com/njblackheritagetrail/virtualmuseum/main/shadyRest/images-edited/imageShadyRest1.png][shadyRest2]]
@@ -169,7 +242,8 @@ navigator.mediaDevices.getUserMedia({ video: { facingMode: &quot;environment&quo
 &lt;&lt;/nobr&gt;&gt;
 
 &lt;&lt;audio &quot;audioShadyRest1&quot; stop&gt;&gt;
-&lt;&lt;audio &quot;audioShadyRest2&quot; loop play&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="shadyRest3" tags="" position="900,600" size="100,100">&lt;video id=&quot;camera-feed&quot; autoplay playsinline style=&quot;width: 100%; height: 100%;&quot;&gt;&lt;/video&gt;
+&lt;&lt;audio &quot;audioShadyRest2&quot; loop play&gt;&gt;
+&lt;&lt;audio &quot;audioShadyRest3&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="shadyRest3" tags="" position="900,600" size="100,100">&lt;video id=&quot;camera-feed&quot; autoplay playsinline style=&quot;width: 100%; height: 100%;&quot;&gt;&lt;/video&gt;
 &lt;&lt;nobr&gt;&gt;
 [img[https://raw.githubusercontent.com/njblackheritagetrail/virtualmuseum/main/general/returnToWelcome.png][welcomeShadyRest]]
 [img[https://raw.githubusercontent.com/njblackheritagetrail/virtualmuseum/main/shadyRest/images-edited/imageShadyRest3.png][shadyRest4]]
